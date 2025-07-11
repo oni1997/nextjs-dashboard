@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: 'Create Invoice',
 };
 
+// Force dynamic rendering to avoid build-time database calls
+export const dynamic = 'force-dynamic';
+
 export default async function Page() {
   const customers = await fetchCustomers();
  

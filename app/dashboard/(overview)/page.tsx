@@ -14,6 +14,9 @@ export const metadata: Metadata = {
   title: 'Dashboard',
 };
 
+// Force dynamic rendering to avoid build-time database calls
+export const dynamic = 'force-dynamic';
+
 export default async function Page() {
   return (
     <main>
